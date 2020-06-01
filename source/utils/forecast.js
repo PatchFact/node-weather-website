@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (requestError) {
             callback('Unable to find location');
         } else {
-            callback(undefined, current.weather_descriptions[0] + '. It is currently ' + current.temperature + ' degrees. It feels like ' + current.feelslike + ' degrees.');
+            callback(undefined, current.weather_descriptions[0] + '. It is currently ' + current.temperature + ' degrees. It feels like ' + current.feelslike + ' degrees. The humidity is at ' + current.humidity + '%.');
         }
     })
 }
