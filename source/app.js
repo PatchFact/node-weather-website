@@ -38,7 +38,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        helpMessage: 'You can email our support group here: patchfact@gmail.com',
+        helpMessage: 'You can contact the creator regarding any issues with the following email: patchfact@gmail.com',
         name: 'Esteban Martinez'
     });
 });
